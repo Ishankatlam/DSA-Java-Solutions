@@ -1,2 +1,20 @@
-# DSA-Java-Solutions
-Daily Java DSA solutions organized topic-wise, covering arrays, strings, trees, graphs, DP, and more. This repo tracks my consistent problem-solving journey, strengthens coding patterns, and documents clean, optimized solutions for interview preparation and skill growth.
+# DSA Java Solutions
+
+Welcome to my Data Structures and Algorithms repository.
+
+## Topics Covered:
+- Arrays
+- Strings
+- Linked Lists
+- Trees
+- Graphs
+- Dynamic Programming
+
+## Goal:
+Solve 250+ DSA problems for interview preparation.
+
+## Language:
+Java
+
+## Platforms:
+LeetCode | GeeksforGeeks | CodeStudio
