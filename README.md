@@ -17,4 +17,4 @@ Solve 250+ DSA problems for interview preparation.
 Java
 
 ## Platforms:
-LeetCode | GeeksforGeeks | CodeStudio
+LeetCode 
