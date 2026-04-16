@@ -3,11 +3,16 @@ Problem: Reverse Array
 Platform: Basic DSA Practice
 
 Approach:
+there are 5 methods
 Use two pointers:
-- One starts from beginning
-- One starts from end
-Swap both until they meet
+using temporary array (Similar types)
+using temp integer variable (Similar types)
+using swapping and iterating it till n/2 element (Must understand to do)
+using recursion (must do)
+using arryalist Colleactions.reverse(arr) (basically reversing array through its inbuit function)
 
+
+two Pointers
 Time Complexity: O(n)
 Space Complexity: O(1)
 */
@@ -37,3 +42,50 @@ public class ReverseArray {
         }
     }
 }
+
+    // --------------------------------------------------
+    //  Using Swapping + Iteration till n/2
+    // --------------------------------------------------
+    public static void reverseBySwapping(int[] arr) {
+        int n = arr.length;
+
+        for (int i = 0; i < n / 2; i++) {
+            int temp = arr[i];
+            arr[i] = arr[n - i - 1];
+            arr[n - i - 1] = temp;
+        }
+    }
+
+    // Method 2: Using Recursion
+    // --------------------------------------------------
+    public static void reverseByRecursion(int[] arr, int left, int right) {
+        if (left >= right) {
+            return;
+        }
+
+        int temp = arr[left];
+        arr[left] = arr[right];
+        arr[right] = temp;
+
+        reverseByRecursion(arr, left + 1, right - 1);
+    }
+    // Method 3: Using ArrayList + Collections.reverse()
+    // --------------------------------------------------
+    public static void reverseByCollections(int[] arr) {
+        ArrayList<Integer> list = new ArrayList<>();
+
+        for (int num : arr) {
+            list.add(num);
+        }
+
+        Collections.reverse(list);
+
+        for (int i = 0; i < arr.length; i++) {
+            arr[i] = list.get(i);
+        }
+    }
+
+
+
+
+
